@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk3"
+    android:orientation="vertical"
+
+    android:weightSum="1"
+    tools:context=".SocketActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="20dp"
+            android:background="#404040"
+            android:gravity="center"
+            android:text="插座控制器"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewSockStatus"
+            android:layout_width="338dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_chazuo_new" />
+
+        <TextView
+            android:id="@+id/textViewSockStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34sp"
+            android:paddingStart="40sp"
+            android:paddingTop="20dp"
+            android:text=""
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonSwitch"
+            android:layout_width="299sp"
+            android:layout_height="296sp"
+            android:layout_below="@+id/textViewSockStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="57sp"
+            android:background="@drawable/switch_on0"
+            android:gravity="center"
+            android:onClick="onSwitchButtonDown" />
+
+    </RelativeLayout>
+
+</LinearLayout>
